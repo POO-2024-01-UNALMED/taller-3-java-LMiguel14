@@ -29,8 +29,7 @@ public class Control {
             tv.canal -= 1;
         }
     }
-
-    public void volumenUp(){
+   public void volumenUp(){
         if( tv.getEstado() && tv.volumen < 7) {
             tv.volumen += 1;
         }
@@ -40,6 +39,14 @@ public class Control {
             tv.volumen -=1;
         }
     }
+    public void setCanal(int canal){
+        if (canal <= 120 && canal >= 1){
+            tv.canal= canal;
+        }
+   
+    }
+
+    TV newtvBro = new TV("samsung", false);
 
 
 }
