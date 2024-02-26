@@ -12,7 +12,7 @@ public class TV {
     public TV (Marca marca, boolean estado) {
         this.marca = marca ;
         this.estado= estado;
-        this.numTV ++;
+        
     }
 
     public static int getNumTV(){
@@ -94,7 +94,7 @@ public class TV {
         }
     }
 
-
+}
 
 
 

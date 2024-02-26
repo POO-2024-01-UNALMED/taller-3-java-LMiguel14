@@ -45,8 +45,9 @@ public class Control {
         }
    
     }
-
-    TV newtvBro = new TV("samsung", false);
-
-
+    public void setVolumen(int volumen) {
+        if (volumen  >= 0 && volumen <= 7 && tv.getEstado()){
+            tv.volumen= volumen;
+        }
+    }
 }
