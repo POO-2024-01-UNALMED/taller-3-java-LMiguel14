@@ -12,10 +12,12 @@ public class Control {
         this.tv = tv;
     }
 
-    public void enlazar(TV tele) {
-        this.tv = tele;
-        tele.setControl(this.tv.control);
+    public void enlazar(TV tv) {
+        this.tv = tv;
+        this.tv.setControl(this);
     }
+
+
     public void turnOn(){
         tv.estado = true;
     }
