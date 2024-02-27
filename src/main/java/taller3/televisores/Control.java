@@ -11,7 +11,7 @@ public class Control {
     }
 
     public void enlazar(TV tele){
-        tv = tele;
+        this.tv = tele;
         
         
     }
@@ -42,7 +42,7 @@ public class Control {
         }
     }
     public void setCanal(int canal){
-        if (canal <= 120 && canal >= 1){
+        if (canal <= 120 && canal >= 1 && tv.getEstado()){
             tv.canal= canal;
         }
    
@@ -52,4 +52,22 @@ public class Control {
             tv.volumen= volumen;
         }
     }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
