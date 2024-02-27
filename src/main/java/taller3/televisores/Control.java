@@ -1,9 +1,11 @@
 package taller3.televisores;
+
+
 public class Control {
     TV tv;
     
     public TV getTv(){
-        return tv;
+        return this.tv;
         
     }
     public void setTv (TV tv){
@@ -53,8 +55,7 @@ public class Control {
         }
     }
     
-    
-
+   
 
 
 
