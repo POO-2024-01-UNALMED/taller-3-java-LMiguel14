@@ -12,6 +12,8 @@ public class Control {
 
     public void enlazar(TV tele){
         tv = tele;
+        
+        
     }
     public void turnOn(){
         tv.estado = true;
